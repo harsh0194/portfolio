@@ -50,8 +50,12 @@
             Harsh <span class="accent">Soni</span>
           </h1>
 
-          <p class="heroLead">
-            IT Operations & Cloud Support professional focused on identity, endpoint management, Microsoft 365, and security tooling.
+          <!-- More professional hierarchy -->
+          <p class="heroLead heroLeadStrong">
+            Cloud Support & Security-Focused IT Operations professional helping teams keep identity, endpoints, and Microsoft 365 running reliably.
+          </p>
+          <p class="heroSub">
+            Hands-on with Entra ID/AD/Okta, Intune/JAMF, M365, Defender/Sentinel, and structured ITSM workflows.
           </p>
 
           <div class="chips">
@@ -61,15 +65,24 @@
             <span class="chip">Security: Defender / Sentinel / Wireshark</span>
           </div>
 
+          <!-- Buttons instead of plain links -->
           <div class="heroBtns">
             <a class="btn primary" href="resume.pdf" target="_blank" rel="noreferrer">
               <span class="btnIcon" aria-hidden="true">⬇</span>
               Download Resume
             </a>
-            <a class="btn" href="mailto:harshsoni1208@outlook.com">Email</a>
-            <a class="btn" href="tel:+16474101208">Call</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/harshsoni1208/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn ghost" href="https://github.com/harsh0194" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="mailto:harshsoni1208@outlook.com">
+              <span class="btnIcon" aria-hidden="true">✉</span>
+              Email
+            </a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/harshsoni1208/" target="_blank" rel="noreferrer">
+              <span class="btnIcon" aria-hidden="true">in</span>
+              LinkedIn
+            </a>
+            <a class="btn ghost" href="https://github.com/harsh0194" target="_blank" rel="noreferrer">
+              <span class="btnIcon" aria-hidden="true">⌂</span>
+              GitHub
+            </a>
           </div>
 
           <div class="miniStats">
@@ -109,8 +122,8 @@
                 <div class="v">Entra ID, AD, Okta, Intune, JAMF, Defender, Sentinel, Wireshark</div>
               </div>
               <div class="kv">
-                <div class="k">Focus</div>
-                <div class="v">Enterprise ops + cloud security direction</div>
+                <div class="k">Strength</div>
+                <div class="v">Fast triage, clean escalation, and documentation habits</div>
               </div>
             </div>
 
@@ -155,7 +168,7 @@
 
           <div class="grid2">
             <div class="box">
-              <h3>Identity</h3>
+              <h3>Identity & Access</h3>
               <ul>
                 <li>Active Directory: user/group admin, access lifecycle</li>
                 <li>Microsoft Entra ID (Azure AD): auth and permissions troubleshooting</li>
@@ -165,7 +178,7 @@
             </div>
 
             <div class="box">
-              <h3>Endpoint</h3>
+              <h3>Endpoint & Device</h3>
               <ul>
                 <li>Windows/macOS L2 support, imaging, hardware/peripherals</li>
                 <li>Intune: app deployment, compliance, basic policy</li>
@@ -311,46 +324,102 @@
         <section id="projects" class="card section">
           <h2>Projects</h2>
 
+          <!-- Case-study style cards (more professional than "whole card is a link") -->
           <div class="projGrid">
-            <a class="projCard" href="https://github.com/harsh0194/SIEM-Implementation-in-Azure-Cloud-Microsoft-Sentinel" target="_blank" rel="noreferrer">
-              <div class="projTitle">Azure SIEM Deployment (Microsoft Sentinel)</div>
-              <div class="projDesc">Log onboarding • KQL analytics rules • detection workflow</div>
-              <div class="projTags">
-                <span class="tag">Azure</span><span class="tag">Sentinel</span><span class="tag">KQL</span>
+            <article class="projCard2">
+              <div class="projTop">
+                <div>
+                  <div class="projTitle">Azure SIEM Deployment (Microsoft Sentinel)</div>
+                  <div class="projDesc">Ingested logs, built detections with KQL, and validated incident workflow basics.</div>
+                </div>
+                <div class="projTags">
+                  <span class="tag">Azure</span><span class="tag">Sentinel</span><span class="tag">KQL</span>
+                </div>
               </div>
-            </a>
+              <ul class="projBullets">
+                <li>Configured data connectors and normalized event flow for analysis.</li>
+                <li>Created and tested analytics rules to surface suspicious activity patterns.</li>
+              </ul>
+              <div class="projActions">
+                <a class="btn ghost" href="https://github.com/harsh0194/SIEM-Implementation-in-Azure-Cloud-Microsoft-Sentinel" target="_blank" rel="noreferrer">View GitHub</a>
+              </div>
+            </article>
 
-            <a class="projCard" href="https://github.com/harsh0194/Password-Management-in-AWS" target="_blank" rel="noreferrer">
-              <div class="projTitle">Secure Password Management (AWS / Passbolt)</div>
-              <div class="projDesc">HTTPS encryption • RBAC • least privilege</div>
-              <div class="projTags">
-                <span class="tag">AWS</span><span class="tag">Security</span><span class="tag">RBAC</span>
+            <article class="projCard2">
+              <div class="projTop">
+                <div>
+                  <div class="projTitle">Secure Password Management (AWS / Passbolt)</div>
+                  <div class="projDesc">Deployed a password vault with HTTPS, role-based access, and least-privilege thinking.</div>
+                </div>
+                <div class="projTags">
+                  <span class="tag">AWS</span><span class="tag">Security</span><span class="tag">RBAC</span>
+                </div>
               </div>
-            </a>
+              <ul class="projBullets">
+                <li>Hardened access paths and organized permissions for shared credentials.</li>
+                <li>Documented setup steps and security rationale for repeatability.</li>
+              </ul>
+              <div class="projActions">
+                <a class="btn ghost" href="https://github.com/harsh0194/Password-Management-in-AWS" target="_blank" rel="noreferrer">View GitHub</a>
+              </div>
+            </article>
 
-            <a class="projCard" href="https://github.com/harsh0194/Network-Analysis-Wireshark-Tcpdump" target="_blank" rel="noreferrer">
-              <div class="projTitle">Network Traffic Analysis (Wireshark + tcpdump)</div>
-              <div class="projDesc">PCAP capture • protocol filters • investigation notes</div>
-              <div class="projTags">
-                <span class="tag">Wireshark</span><span class="tag">tcpdump</span><span class="tag">PCAP</span>
+            <article class="projCard2">
+              <div class="projTop">
+                <div>
+                  <div class="projTitle">Network Traffic Analysis (Wireshark + tcpdump)</div>
+                  <div class="projDesc">Captured PCAPs, applied filters, and wrote investigation notes like a real triage workflow.</div>
+                </div>
+                <div class="projTags">
+                  <span class="tag">Wireshark</span><span class="tag">tcpdump</span><span class="tag">PCAP</span>
+                </div>
               </div>
-            </a>
+              <ul class="projBullets">
+                <li>Practiced protocol-level troubleshooting and anomaly spotting.</li>
+                <li>Built repeatable filtering patterns for quicker analysis.</li>
+              </ul>
+              <div class="projActions">
+                <a class="btn ghost" href="https://github.com/harsh0194/Network-Analysis-Wireshark-Tcpdump" target="_blank" rel="noreferrer">View GitHub</a>
+              </div>
+            </article>
 
-            <a class="projCard" href="https://drive.google.com/drive/folders/1T16oKrBUyzgnb3oS7zkLMuQr44Z4LeJ0?usp=drive_link" target="_blank" rel="noreferrer">
-              <div class="projTitle">Malware Mitigation (Spring4Shell – Forage)</div>
-              <div class="projDesc">IR simulation • Python mitigation • postmortem</div>
-              <div class="projTags">
-                <span class="tag">IR</span><span class="tag">Python</span><span class="tag">Spring4Shell</span>
+            <article class="projCard2">
+              <div class="projTop">
+                <div>
+                  <div class="projTitle">Malware Mitigation (Spring4Shell – Forage)</div>
+                  <div class="projDesc">Incident-response simulation: mitigation steps, Python-based validation, and postmortem thinking.</div>
+                </div>
+                <div class="projTags">
+                  <span class="tag">IR</span><span class="tag">Python</span><span class="tag">Spring4Shell</span>
+                </div>
               </div>
-            </a>
+              <ul class="projBullets">
+                <li>Worked through containment → eradication → recovery workflow.</li>
+                <li>Captured key findings and lessons learned in a structured write-up.</li>
+              </ul>
+              <div class="projActions">
+                <a class="btn ghost" href="https://drive.google.com/drive/folders/1T16oKrBUyzgnb3oS7zkLMuQr44Z4LeJ0?usp=drive_link" target="_blank" rel="noreferrer">Open Case Files</a>
+              </div>
+            </article>
 
-            <a class="projCard" href="https://github.com/harsh0194/Directory-Services-Protector-Lab-Semperis" target="_blank" rel="noreferrer">
-              <div class="projTitle">ELCanhack Hackathon – Cyber Threat Intelligence</div>
-              <div class="projDesc">Operational briefing • threat intel analysis • recommendations</div>
-              <div class="projTags">
-                <span class="tag">CTI</span><span class="tag">Reporting</span><span class="tag">Analysis</span>
+            <article class="projCard2">
+              <div class="projTop">
+                <div>
+                  <div class="projTitle">ELCanHack Hackathon – Cyber Threat Intelligence</div>
+                  <div class="projDesc">Produced an operational briefing with threat intel analysis and actionable recommendations.</div>
+                </div>
+                <div class="projTags">
+                  <span class="tag">CTI</span><span class="tag">Reporting</span><span class="tag">Analysis</span>
+                </div>
               </div>
-            </a>
+              <ul class="projBullets">
+                <li>Translated technical signals into clear decisions and next steps.</li>
+                <li>Focused on clarity, credibility, and stakeholder-ready communication.</li>
+              </ul>
+              <div class="projActions">
+                <a class="btn ghost" href="https://github.com/harsh0194/Directory-Services-Protector-Lab-Semperis" target="_blank" rel="noreferrer">View Repo</a>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -382,11 +451,9 @@
                 <li><span class="code">TryHackMe</span> SOC Level 1 and Level 2</li>
                 <li><span class="code">TryHackMe</span> CyberDefense</li>
                 <li><span class="code">Qualys</span> Vulnerability Management Detection and Response VMDR</li>
-                <li><span class="code">Qualys</span> PCI Compliance </li>
+                <li><span class="code">Qualys</span> PCI Compliance</li>
               </ul>
             </div>
-
- 
           </div>
         </section>
 
@@ -410,34 +477,24 @@
 
         <section id="contact" class="card section">
           <h2>Contact</h2>
+
           <div class="contactGrid">
             <div class="contactRow">
               <div class="contactK">Location</div>
               <div class="contactV">Scarborough, ON (Toronto) • Permanent Resident • Open to relocate</div>
             </div>
-            <div class="contactRow">
-              <div class="contactK">Email</div>
-              <div class="contactV"><a href="mailto:harshsoni1208@outlook.com">harshsoni1208@outlook.com</a></div>
-            </div>
-            <div class="contactRow">
-              <div class="contactK">Phone</div>
-              <div class="contactV"><a href="tel:+16474101208">+1 (647) 410-1208</a></div>
-            </div>
-            <div class="contactRow">
-              <div class="contactK">LinkedIn</div>
-              <div class="contactV"><a href="https://www.linkedin.com/in/harshsoni1208/" target="_blank" rel="noreferrer">linkedin.com/in/harshsoni1208</a></div>
-            </div>
-            <div class="contactRow">
-              <div class="contactK">GitHub</div>
-              <div class="contactV"><a href="https://github.com/harsh0194" target="_blank" rel="noreferrer">github.com/harsh0194</a></div>
-            </div>
           </div>
 
+          <!-- Buttons (professional) -->
           <div class="contactBtns">
             <a class="btn primary" href="resume.pdf" target="_blank" rel="noreferrer">
               <span class="btnIcon" aria-hidden="true">⬇</span> Download Resume
             </a>
-            <a class="btn" href="mailto:harshsoni1208@outlook.com">Email me</a>
+            <a class="btn" href="mailto:harshsoni1208@outlook.com">
+              <span class="btnIcon" aria-hidden="true">✉</span> Email
+            </a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/harshsoni1208/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/harsh0194" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </section>
 
