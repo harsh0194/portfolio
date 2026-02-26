@@ -187,6 +187,21 @@ body{
   line-height: 1.6;
   max-width: 720px;
 }
+
+/* NEW: Hero hierarchy polish */
+.heroLeadStrong{
+  font-size: 17px;
+  line-height: 1.55;
+  color: rgba(234,255,243,0.86);
+  margin-bottom: 8px;
+}
+.heroSub{
+  margin: 0 0 14px;
+  color: rgba(234,255,243,0.70);
+  line-height: 1.55;
+  max-width: 720px;
+}
+
 .chips{
   display:flex;
   flex-wrap: wrap;
@@ -422,7 +437,7 @@ body{
 .role ul{ margin: 0; padding-left: 18px; }
 .role li{ margin: 6px 0; color: rgba(234,255,243,0.84); }
 
-/* projects */
+/* projects (legacy clickable cards - kept just in case) */
 .projGrid{
   margin-top: 12px;
   display:grid;
@@ -452,6 +467,38 @@ body{
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.03);
   color: rgba(234,255,243,0.82);
+}
+
+/* NEW: Case-study project cards used by projCard2 */
+.projCard2{
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  padding: 14px;
+  transition: transform .14s ease, border-color .14s ease;
+}
+.projCard2:hover{
+  transform: translateY(-2px);
+  border-color: rgba(122,255,175,0.22);
+}
+.projTop{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 12px;
+}
+.projBullets{
+  margin: 10px 0 14px;
+  padding-left: 18px;
+}
+.projBullets li{
+  margin: 6px 0;
+  color: rgba(234,255,243,0.84);
+}
+.projActions{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 /* certs */
